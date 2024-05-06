@@ -1,0 +1,7 @@
+.calendar_wrapper {
+  width: 100%;
+  height: 100vh;
+  @include flexCenter(0);
+  background-color: var(--background);
+  transition: all .1s ease;
+}

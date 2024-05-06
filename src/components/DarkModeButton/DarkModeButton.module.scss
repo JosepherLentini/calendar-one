@@ -1,0 +1,41 @@
+.darkModeToggle {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+ 
+
+  &_button {
+    position: relative;
+    width: 75px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--color-violet-light);
+    box-shadow: inset -3px -5px 10px -5px #0000007e;
+    transition: all 0.3s ease-in;
+
+    .switch_circle {
+      position: absolute;
+      top: 50%;
+      right: calc(100% - 5px);
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      transform: translate(100%, -50%);
+      transition: all 0.3s ease-in;
+      background-color: var(--secondary-color);
+      @include flexCenter(0);
+      box-shadow: inset 0px 0px 2px 0px #000000;
+    }
+
+    .darkmode {
+      background-color: var(--secondary-color);
+      left: inherit;
+      transform: translate(0%, -50%);
+      right: calc(0% + 5px);
+    }
+  }
+
+  .darkButton {
+    box-shadow: inset 4px -7px 10px -5px #ffffff67;
+  }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+  font-family: "Jaldi", sans-serif;
+}
+
+:root {
+  --background: rgb(234, 238, 240);
+  --primary-color: #ff9c88;
+  --secondary-color: #7c9bff;
+  --sunday-background-color:  #ff9c88;
+  --not-currentmonth-days: rgba(30, 0, 180, 0.222);
+  --days-of-the-week-color: rgba(255, 127, 101, 0.612);
+  --color-white: rgba(255, 255, 255);
+  --color-violet: #ca9cb8;
+  --color-violet-light: #ca9cb85e;
+  --color-button-bg: rgb(17, 17, 17);
+}
+
+[data-theme="dark"] {
+  --background: rgb(17, 17, 17);
+  --primary-color: #ff7ced;
+  --secondary-color:#7ce2ff;  
+  --sunday-background-color:  #ff7ced;
+  --not-currentmonth-days: rgba(30, 0, 180, 0.222);
+  --days-of-the-week-color: #ff7ceeaf;
+  --color-white: rgba(255, 255, 255);
+  --color-violet: #a7c0f9;
+  --color-violet-light: #a7c0f95f;
+  --color-button-bg: rgb(234, 238, 240);
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: black;
+}

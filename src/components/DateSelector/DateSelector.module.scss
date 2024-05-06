@@ -1,0 +1,92 @@
+.DateSelector {
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(calc(100% + 10px));
+  //   background-color: var(--secondary-color);
+  background-color: var(--color-white);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  // box-shadow: 2px 4px 19px -3px #ca9cb8;
+
+  background: linear-gradient(var(--background), var(--background)) padding-box,
+  linear-gradient(225deg, var(--primary-color), var(--secondary-color)) border-box;
+
+  .yearMonthShower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 20%;
+    width: 100%;
+    //   border-bottom: 1px solid rgba(217, 217, 217, 0.401);
+
+    h3 {
+      @extend %yearOfShowerModal;
+      color: var(--color-violet);
+      cursor: pointer;
+
+      &:hover{
+       color: var(--secondary-color)
+      }
+    }
+
+    &_buttons {
+      @include flexCenter(0);
+      cursor: pointer;
+
+      .arrowIcon {
+
+        border: 2px solid rgba(255, 0, 0, 0);
+        border-radius: 50%;
+
+
+        path:last-child {
+          fill: var(--color-violet);
+        }
+
+        
+        &:hover {
+          border: 2px solid var(--primary-color);
+        //   color: var(--primary-color);
+            path:last-child {
+          fill: var(--primary-color);
+        }
+        }
+
+        &:last-child {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+
+  .dateSelect {
+    width: 100%;
+    height: 80%;
+    font-size: 14px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 5px;
+      cursor: pointer;
+      //   color: var(--color-white);
+      color: var(--color-violet);
+      transition: all 0.2s ease-in-out;
+
+      @extend %modalText;
+      &:hover {
+        
+        color: var(--primary-color);
+      }
+    }
+  }
+}
